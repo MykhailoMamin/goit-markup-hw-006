@@ -263,7 +263,7 @@ footer {
 ========================================== */
 
 .open-button-icon {
-  fill: currentColor;
+  fill: var(--dark-color);
 }
 
 /* MOBILE MENU BUTTON CLOSE */
