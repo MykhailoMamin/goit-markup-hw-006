@@ -42,6 +42,15 @@
               <a href="#" class="navigation-link">Contacts</a>
             </li>
           </ul>
+          <button
+            class="menu-button-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
 
         <!-- Contacts -->
@@ -339,8 +348,99 @@
               </li>
             </ul>
           </div>
+          <div class="footer-subscribe">
+            <p class="footer-title">Subscribe</p>
+            <form class="subscribe-form">
+              <input
+                type="email"
+                name="user_email"
+                class="subscribe-input"
+                placeholder="E-mail"
+                required
+                id="footer-email"
+              />
+              <button class="primary-button footer-button" type="submit">
+                Subscribe
+                <svg width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle close-button js-close-menu">
+        <svg width="8" height="8">
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html" class="subtitle">Studio</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="subtitle active-link">Portfolio</a>
+        </li>
+        <li><a href="#" class="subtitle">Contacts</a></li>
+      </ul>
+
+      <div class="mobile-info">
+        <!-- Contacts -->
+        <address class="mobile-address">
+          <ul class="">
+            <li class="mobile-contacts-item">
+              <a href="tel:+110001111111" class="subtitle"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a href="mailto:info@devstudio.com" class="sub-subtitle"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-social-list">
+          <li>
+            <a href="" class="social-link">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
