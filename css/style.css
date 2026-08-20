@@ -262,6 +262,10 @@ footer {
     MOBILE MENU SECTION
 ========================================== */
 
+.open-button-icon {
+  fill: currentColor;
+}
+
 /* MOBILE MENU BUTTON CLOSE */
 .menu-toggle {
   border-radius: 50%;
